@@ -20,8 +20,15 @@
 // expected output: Object { a: 1, b: 4, c: 5 }
 
 let obj = { a: 1, b: 2, c: 3, d: 4, e: 5}
+let obj1 = { a: 1, b: 2, c: 3, d: 4, e: 5}
+
 
 // let tester = Object.keys(obj)
-let tester = Object.values(obj)
+// let tester = Object.values(obj)
+// console.log(tester)
+
+let tester = Object.is(obj, obj1)
 console.log(tester)
+
+
 
